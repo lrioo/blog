@@ -2,8 +2,9 @@
 title: "Redis安装"
 date: 2020-04-29T22:19:04+08:00
 draft: false
+tags: ["Redis", "安装配置"]
 categories: ["软件 · 硬件"]
-tags: ["Redis","安装配置"]
+featured_image: 
 ---
 
 # 下载
