@@ -117,7 +117,7 @@ featured_image:
 
 ##### **解决方案**：安装tcl
 
-```
+```language-bash
  yum install tcl
 ```
 
@@ -127,7 +127,7 @@ featured_image:
 
 1. 查看dump.rdb的位置
 
-```
+```language-bash
  find / -name dump.rdb
 ```
 
@@ -141,7 +141,7 @@ featured_image:
 
 5. 创建文件夹，并将dump.rdb文件移动到相应的文件夹下
 
-```
+```language-bash
   mkdir -p /data/redis
   mv /dump.rdb /data/redis/
 ```
