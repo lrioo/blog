@@ -7,7 +7,7 @@ categories: ["软件-硬件"]
 featured_image: 
 ---
 
-# 下载
+## 下载
 
 官网下载最新版本的安装包
 
@@ -22,9 +22,9 @@ featured_image:
 
 
 
-# 安装
+## 安装
 
-#### **第一步**：解压
+### **第一步**：解压
 
 ```language-bash
   cd /usr/local
@@ -32,20 +32,20 @@ featured_image:
   mv redis-5.0.5 redis
 ```
 
-#### **第二步**：安装 gcc 环境 
+### **第二步**：安装 gcc 环境 
 
 ```language-bash
   yum install gcc-c++
 ```
 
-#### **第三步**：编译
+### **第三步**：编译
 
 ```language-bash
   cd /usr/local/redis
   make
 ```
 
-#### **第四步**：安装
+### **第四步**：安装
 
 ```language-bash
   cd /usr/local/redis/src
@@ -54,11 +54,11 @@ featured_image:
 
 
 
-# 配置
+## 配置
 
-#### **第一步**：修改启动脚本
+### **第一步**：修改启动脚本
 
-1. ##### 修改redis内置的启动脚本
+1. #### 修改redis内置的启动脚本
 
   ![img](file:///C:/Users/shiji/Documents/My Knowledge/temp/31f1404f-751f-4e17-855e-3eb06e3d92c9/128/index_files/cc75a73d-a801-412f-8273-801fef0a8794.png)
 
@@ -69,27 +69,27 @@ featured_image:
 ```
 
 
-2. ##### 将redis_init_script拷贝到/etc/init.d目录下，并重命名为redis
+2. #### 将redis_init_script拷贝到/etc/init.d目录下，并重命名为redis
 
   ```language-bash
   cp /usr/local/redis/utils/redis_init_script /etc/init.d/redis
   ```
 
-#### **第二步**：修改配置文件
+### **第二步**：修改配置文件
 
 ```language-bash
  vim /usr/local/redis/redis.conf
 ```
 
-1. ##### 注释掉 bind 127.0.0.1 这一行（解决只能特定网段连接的限制）
+1. #### 注释掉 bind 127.0.0.1 这一行（解决只能特定网段连接的限制）
 
-2. ##### 将 protected-mode 属性改为 no （关闭保护模式，不然会阻止远程访问）
+2. #### 将 protected-mode 属性改为 no （关闭保护模式，不然会阻止远程访问）
 
-3. ##### 将 daemonize 属性改为 yes （这样启动时就在后台启动）
+3. #### 将 daemonize 属性改为 yes （这样启动时就在后台启动）
 
-4. ##### 设置密码（可选，个人建议还是设个密码）
+4. #### 设置密码（可选，个人建议还是设个密码）
 
-#### **第三步**：创建配置文件目录，并迁移文件
+### **第三步**：创建配置文件目录，并迁移文件
 
 ```language-bash
   mkdir -p /etc/conf/redis
@@ -97,7 +97,7 @@ featured_image:
 ```
 文件名对应端口号
 
-#### **第四步**：设置开机启动
+### **第四步**：设置开机启动
 
 \- 打开redis命令: service redis start
 
@@ -109,13 +109,13 @@ featured_image:
 
 
 
-# 相关问题
+## 相关问题
 
-##### **安装Redis，执行make test时遇到You need tcl 8.5 or newer in order to run the Redis test**
+#### **安装Redis，执行make test时遇到You need tcl 8.5 or newer in order to run the Redis test**
 
 ![img](file:///C:/Users/shiji/Documents/My Knowledge/temp/31f1404f-751f-4e17-855e-3eb06e3d92c9/128/index_files/0.9583663870443826.png)
 
-##### **解决方案**：安装tcl
+#### **解决方案**：安装tcl
 
 ```language-bash
  yum install tcl
@@ -123,7 +123,7 @@ featured_image:
 
 
 
-##### **dump.rdb 文件位置**
+#### **dump.rdb 文件位置**
 
 1. 查看dump.rdb的位置
 
@@ -131,7 +131,7 @@ featured_image:
  find / -name dump.rdb
 ```
 
-​		显示为`/dump.rdb`
+​&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;显示为`/dump.rdb`
 
 2. 查看当前的配置文件`/etc/conf/redis/6379.conf`，其中dir配置信息是`dir ./`
 
@@ -150,7 +150,7 @@ featured_image:
 
 
 
-# 参考
+## 参考
 
 #### **安装**
 
