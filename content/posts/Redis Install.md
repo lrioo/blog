@@ -2,7 +2,7 @@
 title: "Redis安装"
 date: 2020-04-29T22:19:04+08:00
 draft: false
-categories: ["软件·硬件"]
+categories: ["软件 · 硬件"]
 tags: ["Redis","安装配置"]
 ---
 
@@ -15,9 +15,9 @@ tags: ["Redis","安装配置"]
   wget http://download.redis.io/releases/redis-5.0.5.tar.gz
 ```
 
->[历史版本库地址](http://download.redis.io/releases/)
+[历史版本库地址](http://download.redis.io/releases/)
 
-><http://download.redis.io/releases/>
+<http://download.redis.io/releases/>
 
 
 
