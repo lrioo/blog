@@ -474,7 +474,7 @@ preserveTaxonomyNames = true
     custom = ''
     # whether to show Hugo and theme info
     # 是否显示 Hugo 和主题信息
-    hugo = true
+    hugo = false
     # whether to show copyright info
     # 是否显示版权信息
     copyright = true
@@ -614,7 +614,7 @@ preserveTaxonomyNames = true
       Twitter = true
       Facebook = true
       Linkedin = false
-      Whatsapp = true
+      Whatsapp = false
       Pinterest = false
       Tumblr = false
       HackerNews = false
@@ -622,7 +622,7 @@ preserveTaxonomyNames = true
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Digg = false
@@ -851,8 +851,8 @@ preserveTaxonomyNames = true
 # Author config
 # 作者配置
 [author]
-  name = "xxxx"
-  email = ""
+  name = "rio"
+  email = "shijianzhende1314@163.com"
   link = ""
 
 # Sitemap config
