@@ -1,9 +1,50 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+subtitle: ""
 date: {{ .Date }}
+lastmod: {{ .Date }}
 draft: true
-categories: []
+author: ""
+authorLink: ""
+description: ""
+license: ""
+
 tags: []
-featured_image:
+categories: []
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: true
+lightgallery: false
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+
+toc:
+  enable: true
+code:
+  copy: true
+  # ...
+math:
+  enable: true
+  # ...
+mapbox:
+  accessToken: ""
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
 ---
+
+
+
+<!--more-->
+
 

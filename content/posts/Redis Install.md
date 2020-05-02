@@ -1,10 +1,46 @@
 ---
 title: "Redis安装"
-date: 2020-04-29T22:19:04+08:00
+subtitle: ""
+date: 2017-03-29T22:19:04+08:00
+lastmod: 2020-04-29T22:19:04+08:00
 draft: false
+author: ""
+authorLink: ""
+description: ""
+license: ""
+
 tags: ["Redis", "安装配置"]
 categories: ["软件-硬件"]
-featured_image: 
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: true
+lightgallery: false
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+
+toc:
+  enable: true
+code:
+  copy: true
+  # ...
+math:
+  enable: true
+  # ...
+mapbox:
+  accessToken: ""
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
 ---
 
 ## 下载
@@ -60,9 +96,9 @@ featured_image:
 
 1. #### 修改redis内置的启动脚本
 
-  ![img](file:///C:/Users/shiji/Documents/My Knowledge/temp/31f1404f-751f-4e17-855e-3eb06e3d92c9/128/index_files/cc75a73d-a801-412f-8273-801fef0a8794.png)
+  &emsp;&emsp;&emsp;&emsp;![img](https://raw.githubusercontent.com/lrioo/blog_image/master/image/posts/redis_install/01.png)
 
-  将图中的内容修改为当前部署环境的真实路径即可。
+  &emsp;&emsp;将图中的内容修改为当前部署环境的真实路径即可。
 
 ```language-bash
   vim /usr/local/redis/utils/redis_init_script
@@ -72,7 +108,7 @@ featured_image:
 2. #### 将redis_init_script拷贝到/etc/init.d目录下，并重命名为redis
 
   ```language-bash
-  cp /usr/local/redis/utils/redis_init_script /etc/init.d/redis
+    cp /usr/local/redis/utils/redis_init_script /etc/init.d/redis
   ```
 
 ### **第二步**：修改配置文件
@@ -113,7 +149,7 @@ featured_image:
 
 #### **安装Redis，执行make test时遇到You need tcl 8.5 or newer in order to run the Redis test**
 
-![img](file:///C:/Users/shiji/Documents/My Knowledge/temp/31f1404f-751f-4e17-855e-3eb06e3d92c9/128/index_files/0.9583663870443826.png)
+&emsp;&emsp;![img](https://raw.githubusercontent.com/lrioo/blog_image/master/image/posts/redis_install/02.png)
 
 #### **解决方案**：安装tcl
 
@@ -131,7 +167,7 @@ featured_image:
  find / -name dump.rdb
 ```
 
-​&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;显示为`/dump.rdb`
+​&emsp;&emsp;&emsp;显示为`/dump.rdb`
 
 2. 查看当前的配置文件`/etc/conf/redis/6379.conf`，其中dir配置信息是`dir ./`
 
