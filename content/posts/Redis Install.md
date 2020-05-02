@@ -1,10 +1,10 @@
 ---
 title: "Redis安装"
-subtitle: ""
+subtitle: "Redis的安装配置和常见问题排查"
 date: 2017-03-29T22:19:04+08:00
 lastmod: 2020-04-29T22:19:04+08:00
 draft: false
-author: ""
+author: "Rio"
 authorLink: ""
 description: ""
 license: ""
@@ -21,7 +21,7 @@ lightgallery: false
 ruby: true
 fraction: true
 fontawesome: true
-linkToMarkdown: true
+linkToMarkdown: false
 rssFullText: false
 
 toc:
@@ -56,7 +56,9 @@ comment:
 
 <http://download.redis.io/releases/>
 
-
+<!--more-->
+<br />
+<br />
 
 ## 安装
 
@@ -88,7 +90,8 @@ comment:
   make install
 ```
 
-
+<br />
+<br />
 
 ## 配置
 
@@ -143,7 +146,8 @@ comment:
 
 \- 设为开机关闭: chkconfig redis off
 
-
+<br />
+<br />
 
 ## 相关问题
 
@@ -157,7 +161,7 @@ comment:
  yum install tcl
 ```
 
-
+<br />
 
 #### **dump.rdb 文件位置**
 
@@ -184,7 +188,8 @@ comment:
 
 6. 启动redis服务
 
-
+<br />
+<br />
 
 ## 参考
 

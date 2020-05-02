@@ -4,7 +4,7 @@ baseURL = "https://lrioo.github.io" # <head> 里面的 baseurl 信息，填你�
 title = "Rio`s Blog"
 # [en, zh-cn, fr, pl, ...] determines default content language
 # [en, zh-cn, fr, pl, ...] 设置默认的语言
-languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
 # theme
 # 主题
 theme = "LoveIt"        # 主题 (需要自己下载)
@@ -19,12 +19,12 @@ enableGitInfo = true
 # 是否使用 emoji 代码
 enableEmoji = true
 
-preserveTaxonomyNames = true
+#preserveTaxonomyNames = true
 
-[blackfriday]
-  hrefTargetBlank = true
-  nofollowLinks = true
-  noreferrerLinks = true
+#[blackfriday]
+#  hrefTargetBlank = true
+#  nofollowLinks = true
+#  noreferrerLinks = true
 
 [languages]
   [languages.zh-cn]
@@ -61,13 +61,13 @@ preserveTaxonomyNames = true
         url = "/categories/"
         title = ""
         weight = 2
-      [[languages.zh-cn.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        name = "文档"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 3
+      # [[languages.zh-cn.menu.main]]
+        # identifier = "documentation"
+        # pre = ""
+        # name = "文档"
+        # url = "/categories/documentation/"
+        # title = ""
+        # weight = 3
       [[languages.zh-cn.menu.main]]
         identifier = "tags"
         pre = ""
@@ -110,7 +110,7 @@ preserveTaxonomyNames = true
         # Safari 图标颜色
         iconColor = "#5bbad5"
         # Windows v8-10 磁贴颜色
-        tileColor = "#da532c"
+        tileColor = "#ffffff"
       # 搜索配置
       [languages.zh-cn.params.search]
         enable = true
@@ -153,7 +153,7 @@ preserveTaxonomyNames = true
           disclaimer = ""
         # 主页文章列表
         [languages.zh-cn.params.home.posts]
-          enable = true
+          enable = false
           # 主页每页显示文章数量
           paginate = 6
       # 主页的社交信息设置
@@ -221,212 +221,212 @@ preserveTaxonomyNames = true
         #Matrix = ""
         #Bilibili = "xxxx"
         Email = "shijianzhende1314@163.com"
-        RSS = true
+        #RSS = true
 
-    [languages.en]
-    weight = 2
-    # language code
-    languageCode = "en"
-    # language name
-    languageName = "English"
-    # whether to include Chinese/Japanese/Korean
-    hasCJKLanguage = false
-    # default amount of posts in each pages
-    paginate = 12
-    # [UA-XXXXXXXX-X] google analytics code
-    googleAnalytics = ""
-    # copyright description used only for seo schema
-    copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-    # Menu config
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "posts"
-        # you can add extra information before the name (HTML format is supported), such as icons
-        pre = ""
-        # you can add extra information after the name (HTML format is supported), such as icons
-        post = ""
-        name = "Posts"
-        url = "/posts/"
-        # title will be shown when you hover on this menu link.
-        title = ""
-        weight = 1
-      [[languages.en.menu.main]]
-        identifier = "categories"
-        pre = ""
-        post = ""
-        name = "Categories"
-        url = "/categories/"
-        title = ""
-        weight = 2
-      [[languages.en.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 3
-      [[languages.en.menu.main]]
-        identifier = "tags"
-        pre = ""
-        post = ""
-        name = "Tags"
-        url = "/tags/"
-        title = ""
-        weight = 4
-      [[languages.en.menu.main]]
-        identifier = "about"
-        pre = ""
-        post = ""
-        name = "About"
-        url = "/about/"
-        title = ""
-        weight = 5
-      [[languages.en.menu.main]]
-        identifier = "github"
-        pre = "<i class='fab fa-github fa-fw'></i>"
-        post = ""
-        name = ""
-        url = "https://github.com/lrioo"
-        title = "GitHub"
-        weight = 6
-    [languages.en.params]
-      # site description
-      description = "C'est La Vie"
-      # site keywords
-      keywords = ["Essay", "Code"]
-      # App icon config
-      [languages.en.params.app]
-        # optional site title override for the app when added to an iOS home screen or Android launcher
-        title = "Rio's Blog"
-        # whether to omit favicon resource links
-        noFavicon = false
-        # modern SVG favicon to use in place of older style .png and .ico files
-        svgFavicon = ""
-        # Android browser theme color
-        themeColor = "#ffffff"
-        # Safari mask icon color
-        iconColor = "#5bbad5"
-        # Windows v8-10 tile color
-        tileColor = "#da532c"
-      # Search config
-      [languages.en.params.search]
-        enable = true
-        # type of search engine ("lunr", "algolia")
-        type = "algolia"
-        # max index length of the chunked content
-        contentLength = 4000
-        # placeholder of the search bar
-        placeholder = ""
-        # max number of results length
-        maxResultLength = 10
-        # snippet length of the result
-        snippetLength = 30
-        # HTML tag name of the highlight part in results
-        highlightTag = "em"
-        # whether to use the absolute URL based on the baseURL in search index
-        absoluteURL = false
-        [languages.en.params.search.algolia]
-          index = "index.en"
-          appID = "PASDMWALPK"
-          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
-      # Home page config
-      [languages.en.params.home]
-        # amount of RSS pages
-        rss = 10
-        # Home page profile
-        [languages.en.params.home.profile]
-          enable = true
-          # Gravatar Email for preferred avatar in home page
-          gravatarEmail = ""
-          # URL of avatar shown in home page
-          avatarURL = "/images/me/avatar.png"
-          # subtitle shown in home page
-          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
-          # whether to use typeit animation for subtitle
-          typeit = true
-          # whether to show social links
-          social = true
-          # disclaimer (HTML format is supported)
-          disclaimer = ""
-        # Home page posts
-        [languages.en.params.home.posts]
-          enable = true
-          # special amount of posts in each home posts page
-          paginate = 6
-      # Social config in home page
-      [languages.en.params.social]
-        GitHub = "lrioo"
-        #Linkedin = ""
-        #Twitter = "xxxx"
-        #Instagram = "xxxx"
-        #Facebook = "xxxx"
-        #Telegram = "xxxx"
-        #Medium = ""
-        #Gitlab = ""
-        #Youtubelegacy = "xxxx"
-        #Youtubecustom = ""
-        #Youtubechannel = ""
-        #Tumblr = ""
-        #Quora = ""
-        #Keybase = ""
-        #Pinterest = ""
-        #Reddit = ""
-        #Codepen = ""
-        #FreeCodeCamp = ""
-        #Bitbucket = ""
-        #Stackoverflow = ""
-        #Weibo = ""
-        #Odnoklassniki = ""
-        #VK = ""
-        #Flickr = ""
-        #Xing = ""
-        #Snapchat = ""
-        #Soundcloud = ""
-        #Spotify = ""
-        #Bandcamp = ""
-        #Paypal = ""
-        #Fivehundredpx = ""
-        #Mix = ""
-        #Goodreads = ""
-        #Lastfm = ""
-        #Foursquare = ""
-        #Hackernews = ""
-        #Kickstarter = ""
-        #Patreon = ""
-        #Steam = ""
-        #Twitch = ""
-        #Strava = ""
-        #Skype = ""
-        #Whatsapp = ""
-        #Zhihu = ""
-        #Douban = ""
-        #Angellist = ""
-        #Slidershare = ""
-        #Jsfiddle = ""
-        #Deviantart = ""
-        #Behance = ""
-        #Dribbble = ""
-        #Wordpress = ""
-        #Vine = ""
-        #Googlescholar = ""
-        #Researchgate = ""
-        #Thingiverse = ""
-        #Devto = ""
-        #Gitea = ""
-        #XMPP = ""
-        #Matrix = ""
-        #Bilibili = ""
-        Email = "shijianzhende1314@163.com"
-        RSS = true
-        #[languages.en.params.social.Mastodon]
-        #  id = "@xxxx"
-        #  prefix = "https://mastodon.technology/"
+  # [languages.en]
+  #   weight = 2
+  #   # language code
+  #   languageCode = "en"
+  #   # language name
+  #   languageName = "English"
+  #   # whether to include Chinese/Japanese/Korean
+  #   hasCJKLanguage = false
+  #   # default amount of posts in each pages
+  #   paginate = 12
+  #   # [UA-XXXXXXXX-X] google analytics code
+  #   googleAnalytics = ""
+  #   # copyright description used only for seo schema
+  #   copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+  #   # Menu config
+  #   [languages.en.menu]
+  #     [[languages.en.menu.main]]
+  #       identifier = "posts"
+  #       # you can add extra information before the name (HTML format is supported), such as icons
+  #       pre = ""
+  #       # you can add extra information after the name (HTML format is supported), such as icons
+  #       post = ""
+  #       name = "Posts"
+  #       url = "/posts/"
+  #       # title will be shown when you hover on this menu link.
+  #       title = ""
+  #       weight = 1
+  #     [[languages.en.menu.main]]
+  #       identifier = "categories"
+  #       pre = ""
+  #       post = ""
+  #       name = "Categories"
+  #       url = "/categories/"
+  #       title = ""
+  #       weight = 2
+  #     [[languages.en.menu.main]]
+  #       identifier = "documentation"
+  #       pre = ""
+  #       post = ""
+  #       name = "Docs"
+  #       url = "/categories/documentation/"
+  #       title = ""
+  #       weight = 3
+  #     [[languages.en.menu.main]]
+  #       identifier = "tags"
+  #       pre = ""
+  #       post = ""
+  #       name = "Tags"
+  #       url = "/tags/"
+  #       title = ""
+  #       weight = 4
+  #     [[languages.en.menu.main]]
+  #       identifier = "about"
+  #       pre = ""
+  #       post = ""
+  #       name = "About"
+  #       url = "/about/"
+  #       title = ""
+  #       weight = 5
+  #     [[languages.en.menu.main]]
+  #       identifier = "github"
+  #       pre = "<i class='fab fa-github fa-fw'></i>"
+  #       post = ""
+  #       name = ""
+  #       url = "https://github.com/lrioo"
+  #       title = "GitHub"
+  #       weight = 6
+  #   [languages.en.params]
+  #     # site description
+  #     description = "C'est La Vie"
+  #     # site keywords
+  #     keywords = ["Essay", "Code"]
+  #     # App icon config
+  #     [languages.en.params.app]
+  #       # optional site title override for the app when added to an iOS home screen or Android launcher
+  #       title = "Rio's Blog"
+  #       # whether to omit favicon resource links
+  #       noFavicon = false
+  #       # modern SVG favicon to use in place of older style .png and .ico files
+  #       svgFavicon = ""
+  #       # Android browser theme color
+  #       themeColor = "#ffffff"
+  #       # Safari mask icon color
+  #       iconColor = "#5bbad5"
+  #       # Windows v8-10 tile color
+  #       tileColor = "#da532c"
+  #     # Search config
+  #     [languages.en.params.search]
+  #       enable = true
+  #       # type of search engine ("lunr", "algolia")
+  #       type = "algolia"
+  #       # max index length of the chunked content
+  #       contentLength = 4000
+  #       # placeholder of the search bar
+  #       placeholder = ""
+  #       # max number of results length
+  #       maxResultLength = 10
+  #       # snippet length of the result
+  #       snippetLength = 30
+  #       # HTML tag name of the highlight part in results
+  #       highlightTag = "em"
+  #       # whether to use the absolute URL based on the baseURL in search index
+  #       absoluteURL = false
+  #       [languages.en.params.search.algolia]
+  #         index = "index.en"
+  #         appID = "PASDMWALPK"
+  #         searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+  #     # Home page config
+  #     [languages.en.params.home]
+  #       # amount of RSS pages
+  #       rss = 10
+  #       # Home page profile
+  #       [languages.en.params.home.profile]
+  #         enable = true
+  #         # Gravatar Email for preferred avatar in home page
+  #         gravatarEmail = ""
+  #         # URL of avatar shown in home page
+  #         avatarURL = "/images/me/avatar.png"
+  #         # subtitle shown in home page
+  #         subtitle = "C'est La Vie"
+  #         # whether to use typeit animation for subtitle
+  #         typeit = false
+  #         # whether to show social links
+  #         social = true
+  #         # disclaimer (HTML format is supported)
+  #         disclaimer = ""
+  #       # Home page posts
+  #       [languages.en.params.home.posts]
+  #         enable = false
+  #         # special amount of posts in each home posts page
+  #         paginate = 6
+  #     # Social config in home page
+  #     [languages.en.params.social]
+  #       GitHub = "lrioo"
+  #       #Linkedin = ""
+  #       #Twitter = "xxxx"
+  #       #Instagram = "xxxx"
+  #       #Facebook = "xxxx"
+  #       #Telegram = "xxxx"
+  #       #Medium = ""
+  #       #Gitlab = ""
+  #       #Youtubelegacy = "xxxx"
+  #       #Youtubecustom = ""
+  #       #Youtubechannel = ""
+  #       #Tumblr = ""
+  #       #Quora = ""
+  #       #Keybase = ""
+  #       #Pinterest = ""
+  #       #Reddit = ""
+  #       #Codepen = ""
+  #       #FreeCodeCamp = ""
+  #       #Bitbucket = ""
+  #       #Stackoverflow = ""
+  #       #Weibo = ""
+  #       #Odnoklassniki = ""
+  #       #VK = ""
+  #       #Flickr = ""
+  #       #Xing = ""
+  #       #Snapchat = ""
+  #       #Soundcloud = ""
+  #       #Spotify = ""
+  #       #Bandcamp = ""
+  #       #Paypal = ""
+  #       #Fivehundredpx = ""
+  #       #Mix = ""
+  #       #Goodreads = ""
+  #       #Lastfm = ""
+  #       #Foursquare = ""
+  #       #Hackernews = ""
+  #       #Kickstarter = ""
+  #       #Patreon = ""
+  #       #Steam = ""
+  #       #Twitch = ""
+  #       #Strava = ""
+  #       #Skype = ""
+  #       #Whatsapp = ""
+  #       #Zhihu = ""
+  #       #Douban = ""
+  #       #Angellist = ""
+  #       #Slidershare = ""
+  #       #Jsfiddle = ""
+  #       #Deviantart = ""
+  #       #Behance = ""
+  #       #Dribbble = ""
+  #       #Wordpress = ""
+  #       #Vine = ""
+  #       #Googlescholar = ""
+  #       #Researchgate = ""
+  #       #Thingiverse = ""
+  #       #Devto = ""
+  #       #Gitea = ""
+  #       #XMPP = ""
+  #       #Matrix = ""
+  #       #Bilibili = ""
+  #       Email = "shijianzhende1314@163.com"
+  #       #RSS = true
+  #       #[languages.en.params.social.Mastodon]
+  #         #id = ""
+  #         #prefix = "https://mastodon.technology/"
 
 [params]
     # LoveIt theme version
   # LoveIt 主题版本
-  #version = "0.2.X"
+  version = "0.2.X"
   # site default theme ("light", "dark", "auto")
   # 网站默认主题 ("light", "dark", "auto")
   defaultTheme = "auto"
@@ -457,7 +457,7 @@ preserveTaxonomyNames = true
       logo = ""
       # title name
       # 标题名称
-      name = "cd ~"
+      name = " cd ~ "
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = "<span class='logo_mark'>>$</span>"
@@ -543,7 +543,7 @@ preserveTaxonomyNames = true
     fontawesome = true
     # whether to show link to Raw Markdown content of the content
     # 是否显示原始 Markdown 文档内容的链接
-    linkToMarkdown = true
+    linkToMarkdown = false
     # whether to show the full text content in RSS
     # 是否在 RSS 中显示全文内容
     rssFullText = false
@@ -611,8 +611,8 @@ preserveTaxonomyNames = true
     # 文章页面的分享信息设置
     [params.page.share]
       enable = true
-      Twitter = true
-      Facebook = true
+      Twitter = false
+      Facebook = false
       Linkedin = false
       Whatsapp = false
       Pinterest = false
@@ -631,7 +631,7 @@ preserveTaxonomyNames = true
       Weibo = true
       Renren = false
       Myspace = true
-      Blogger = true
+      Blogger = false
       Baidu = false
       Odnoklassniki = false
       Evernote = true
@@ -702,7 +702,7 @@ preserveTaxonomyNames = true
       # Publisher info
       # 出版者信息
       [params.page.seo.publisher]
-        name = "xxxx"
+        name = "Rio"
         [params.page.seo.publisher.logo]
           url = "logo.png"
           width = 127
@@ -851,7 +851,7 @@ preserveTaxonomyNames = true
 # Author config
 # 作者配置
 [author]
-  name = "rio"
+  name = "Rio"
   email = "shijianzhende1314@163.com"
   link = ""
 
@@ -866,7 +866,7 @@ preserveTaxonomyNames = true
 # Permalinks 配置 (https://gohugo.io/content-management/urls/#permalinks)
 [Permalinks]
   # posts = ":year/:month/:filename"
-  posts = ":filename"
+  posts = ":year/:filename"
 
 # Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
 # 隐私信息配置 (https://gohugo.io/about/hugo-and-gdpr/)
