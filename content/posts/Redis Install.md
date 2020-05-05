@@ -28,19 +28,14 @@ toc:
   enable: true
 code:
   copy: true
-  # ...
 math:
   enable: true
-  # ...
 mapbox:
   accessToken: ""
-  # ...
 share:
   enable: true
-  # ...
 comment:
   enable: true
-  # ...
 ---
 
 ## 下载
