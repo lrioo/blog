@@ -1,7 +1,7 @@
 baseURL = "https://lrioo.github.io" # <head> 里面的 baseurl 信息，填你的博客地址
 # website title
 # 网站标题
-title = "Rio`s Blog"
+title = "lrioo`s blog"
 # [en, zh-cn, fr, pl, ...] determines default content language
 # [en, zh-cn, fr, pl, ...] 设置默认的语言
 defaultContentLanguage = "zh-cn"
@@ -92,7 +92,7 @@ enableEmoji = true
         weight = 6
     [languages.zh-cn.params]
       # 网站描述
-      description = "C'est La Vie"
+      description = "生活在别处"
       # 网站关键词
       keywords = ["Essay", "Code"]
       # [UA-XXXXXXXX-X] 谷歌分析代号
@@ -100,7 +100,7 @@ enableEmoji = true
       # 应用图标配置
       [languages.zh-cn.params.app]
         # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-        title = "Rio's Blog"
+        title = "lrioo's blog"
         # 是否隐藏网站图标资源链接
         noFavicon = false
         # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
@@ -144,9 +144,9 @@ enableEmoji = true
           # 主页显示头像的 URL
           avatarURL = "/images/me/avatar.png"
           # 主页显示的网站副标题
-          subtitle = "C'est La Vie"
+          subtitle = "不要温和地走进那良夜"
           # 是否为副标题显示打字机动画
-          typeit = false
+          typeit = true
           # 是否显示社交账号
           social = true
           # 免责声明 (支持 HTML 格式)
@@ -220,7 +220,7 @@ enableEmoji = true
         #XMPP = ""
         #Matrix = ""
         #Bilibili = "xxxx"
-        Email = "shijianzhende1314@163.com"
+        Email = "lrioo@outlook.com"
         #RSS = true
 
   # [languages.en]
@@ -298,7 +298,7 @@ enableEmoji = true
   #     # App icon config
   #     [languages.en.params.app]
   #       # optional site title override for the app when added to an iOS home screen or Android launcher
-  #       title = "Rio's Blog"
+  #       title = "lrioo's blog"
   #       # whether to omit favicon resource links
   #       noFavicon = false
   #       # modern SVG favicon to use in place of older style .png and .ico files
@@ -702,7 +702,7 @@ enableEmoji = true
       # Publisher info
       # 出版者信息
       [params.page.seo.publisher]
-        name = "Rio"
+        name = "lrioo"
         [params.page.seo.publisher.logo]
           url = "logo.png"
           width = 127
@@ -851,8 +851,8 @@ enableEmoji = true
 # Author config
 # 作者配置
 [author]
-  name = "Rio"
-  email = "shijianzhende1314@163.com"
+  name = "lrioo"
+  email = "lrioo@outlook.com"
   link = ""
 
 # Sitemap config
