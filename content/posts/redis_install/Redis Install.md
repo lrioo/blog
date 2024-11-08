@@ -4,7 +4,7 @@ subtitle: "Redis的安装配置和常见问题排查"
 date: 2017-03-29T22:19:04+08:00
 lastmod: 2020-04-29T22:19:04+08:00
 draft: false
-author: "Rio"
+author: "lrioo"
 authorLink: ""
 description: ""
 license: ""
