@@ -144,7 +144,7 @@ enableEmoji = true
           # 主页显示头像的 URL
           avatarURL = "/images/me/avatar.png"
           # 主页显示的网站副标题
-          subtitle = "不要温和地走进那良夜"
+          subtitle = "<span class='custom_mark'> : ) 不 要 温 和 地 走 进 那 良 夜 </span>"
           # 是否为副标题显示打字机动画
           typeit = true
           # 是否显示社交账号
@@ -471,7 +471,7 @@ enableEmoji = true
     enable = true
     # Custom content (HTML format is supported)
     # 自定义内容 (支持 HTML 格式)
-    custom = ''
+    custom = "<span class='custom_mark'>尼采说：生活在别处</span>"
     # whether to show Hugo and theme info
     # 是否显示 Hugo 和主题信息
     hugo = false
@@ -480,7 +480,7 @@ enableEmoji = true
     copyright = true
     # whether to show the author
     # 是否显示作者
-    author = true
+    author = false
     # site creation time
     # 网站创立年份
     since = 2017
