@@ -142,7 +142,7 @@ enableEmoji = true
           # Gravatar 邮箱，用于优先在主页显示的头像
           gravatarEmail = ""
           # 主页显示头像的 URL
-          avatarURL = "/avatar.png"
+          avatarURL = "/images/me/avatar.png"
           # 主页显示的网站副标题
           subtitle = "C'est La Vie"
           # 是否为副标题显示打字机动画
